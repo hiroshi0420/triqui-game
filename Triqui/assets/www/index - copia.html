@@ -1,0 +1,83 @@
+<html class=" scroll-enabled">
+<head>
+    <meta charset="utf-8">
+    <title>Lungo 2.1 - Example</title>
+    <meta name="description" content="">
+    <meta name="author" content="Javier Jiménez Villar (@soyjavi)">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- Main Stylesheet -->
+	<link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="js/lungo/lungo.css">
+    <link rel="stylesheet" href="js/lungo/lungo.icon.css">
+    <link rel="stylesheet" href="js/lungo/lungo.icon.brand.css">
+    <link rel="stylesheet" href="js/lungo/lungo.css">
+    <link rel="stylesheet" href="js/lungo/theme.lungo.css">
+	
+	<!-- Lungo - Dependencies -->
+    <script src="js/quojs/quo.js"></script>
+    <script src="js/lungo/lungo.js"></script><div class="notification"><div class="window"></div></div>
+    <!-- Lungo - Sandbox App -->
+	
+	<!-- Phonegap Dependencies -->
+    <!--  <script type="text/javascript" src="js/cordova-2.7.0.js"></script> -->
+    <script type="text/javascript" src="js/index.js"></script>  
+</head>
+
+<body class="app" data-position="fixed">
+
+<!-- Transitions : slide, pop, cover -->
+
+	<section id="main" data-transition="cover" class="show">
+		<article id="container" class="active">
+			<div id="content">
+				<div id='inner'>
+					<b>Triqui Voice</b>
+					</br>			
+						<img  src="img/2_triqui_madera.jpg" />
+					</br>
+					<div id="init">
+						<img  id="loading" src="img/border.gif" />
+						</br>
+						<a href="#loader" data-router="section" class="large button" id="comenzar" style="visibility:hidden">
+						Start
+						</a>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+
+
+    <section id="loader" data-transition="cover" >
+        <header data-title="Asynchronoud load"><span class="title centered">Asynchronoud load</span></header>
+        <article id="art1" >
+            <br>
+            <a href="#main2" data-router="section" class="large button" >
+                Go to section
+            </a>
+			drhstjsrtjrdjkdrk
+        </article>
+    </section>
+
+    
+    
+	<section id="main2" data-transition="cover">
+		<header data-title="Async"><span class="title centered">Async</span></header>
+		<article id="main-article" >
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur elementum molestie justo, eget tincidunt libero mollis vehicula. Nunc faucibus egestas leo, placerat rutrum tellus dictum imperdiet. Donec sit amet libero id metus fermentum blandit. Integer iaculis enim at nisi tincidunt ac mollis urna semper. Cras vehicula aliquam elementum. Quisque ac diam est, vel rhoncus urna. Aenean posuere vehicula ipsum, quis euismod diam euismod eu. Aenean mi sapien, pulvinar ut sodales ut, interdum vitae mi. Suspendisse et arcu leo. Nunc at metus at lectus condimentum malesuada. Curabitur sit amet risus ante, ac tincidunt dolor. Nulla sed odio sed ante adipiscing malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+		</article>
+	</section>
+
+	  
+
+<script type="text/javascript">
+    app.initialize();
+</script>
+
+</body></html>

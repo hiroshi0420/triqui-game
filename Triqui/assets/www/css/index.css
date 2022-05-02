@@ -1,0 +1,20 @@
+
+
+#container {
+    display: table;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+	background-color:#FFF;
+    }
+
+#content {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    }
+
+#inner {
+	text-align:center;
+    margin: 0 auto;
+    }

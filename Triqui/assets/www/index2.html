@@ -1,0 +1,77 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>CSSLab - Centrado Vertical con CSS</title>
+	
+<style type="text/css">
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    }
+
+body {
+    font: 100% Georgia, serif;
+    background-color: #fefefe;
+    color: #333;
+    }
+
+p {
+    font-size: 14px;
+	line-height: 150%;
+    }
+
+h1 {
+    color: #C00;
+	text-shadow: #000 1px 1px 2px;
+    }
+
+#container {
+    display: table;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    }
+
+#content {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    }
+
+#inner {
+    border: 1px dashed #F00;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0 20px;
+    }
+
+/* \*/
+* html #content {
+    top: 50%;
+    left: 0;
+    height: 1px;
+    }
+
+* html #content #inner {
+    position: relative;
+    top: -50%;
+    }
+/* */
+
+</style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="content">
+      <div id="inner">
+	  
+        <h1>CSSLab - Centrado Vertical</h1>
+        <p>Utilizando la propiedad <strong>display: table</strong> para centrar el contenido verticalmente dentro de un div con alto fijo. Fue necesario un hack para IE6 (star hack) ya que este browser no 	soporta esta propiedad de display como debería hacerlo (tremenda novedad...). La idea es que tu contenido esté contenido dentro del div "<strong>inner</strong>". Probado con Safari, FF e IE6 </p>
+		
+      </div><!-- fin inner -->
+    </div><!-- fin content" -->
+  </div>
+
+
+</body></html>

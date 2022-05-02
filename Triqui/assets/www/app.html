@@ -1,0 +1,222 @@
+<html class=" scroll-enabled">
+<head>
+    <meta charset="utf-8">
+    <title>Lungo 2.1 - Example</title>
+    <meta name="description" content="">
+    <meta name="author" content="Javier Jiménez Villar (@soyjavi)">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- Main Stylesheet -->
+	<link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="js/lungo/lungo.css">
+    <link rel="stylesheet" href="js/lungo/lungo.icon.css">
+    <link rel="stylesheet" href="js/lungo/lungo.icon.brand.css">
+    <link rel="stylesheet" href="js/lungo/lungo.css">
+    <link rel="stylesheet" href="js/lungo/theme.lungo.css">
+	
+	<!-- Lungo - Dependencies-->
+	<script  type="text/javascript" async src="js/index.js"></script> 
+	<script  type="text/javascript" async src="js/quojs/quo.js"></script>
+    <script  type="text/javascript" async src="js/lungo/lungo.js"></script>
+    <!-- Lungo - Sandbox App -->
+
+
+	
+</head>
+
+<body class="app" data-position="fixed">
+<!-- Transitions : slide, pop, cover -->
+
+
+<section id="main" class="show" data-transition="slide">
+
+
+    <header data-title="Triqui Voice">
+<!--         <nav>
+            <a href="#article_1" data-router="article" class="left">
+                Home
+            </a>
+            <a href="#article_2" data-router="article" class="right">
+                Go
+            </a>
+        </nav> -->
+    </header>
+    <footer>
+        <nav>
+            <a href="#article_1" data-router="article" data-icon="home" class="active"></a>
+            <a href="#article_3" data-router="article" data-icon="settings"></a>
+			<!--<a href="#second" data-router="section" data-icon="right"></a> -->
+       </nav>
+    </footer>
+    <article id="article_1" class="active" data-transition="slide">
+	
+		<div id="container" >
+			<div id="content">
+				<div id='inner'>
+					</br>
+					Divertido juego con la voz, un triqui para que juegues con tus amigos ;)
+					</br>
+						<img  src="img/2_triqui_madera.jpg" />
+					</br>
+					<div id="init">
+						</br>
+						<!--<a href="#main2" data-router="section" class="small button" data-transition="slide"> </a>-->
+						<a href="#" id="un_ejemplo" class="button">esto</a>
+						<a href="#" onclick="gameInit()" class="button anchor">Html</a>
+				
+					</div>
+				</div>
+			</div>
+		</div>
+        
+    </article>
+    <article id="article_2" data-transition="slide">
+        <div id="container" >
+			<div id="content">
+				<div id='inner'>
+					<table class="triquiTable">
+						<tr>
+							<td>a
+							</td>
+							<td>b
+							</td>
+							<td>c
+							</td>
+						</tr>
+						<tr>
+							<td>d
+							</td>
+							<td>e
+							</td>
+							<td>f
+							</td>
+						</tr>
+						<tr>
+							<td>g
+							</td>
+							<td>h
+							</td>
+							<td>i
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+    </article>
+	
+	<article id="article_3" data-transition="slide">
+	Configuraciones		
+	</article>
+</section>
+
+
+<section id="second">
+    <header data-back="home blue" data-title="example"></header>
+    <article id="article_1_1" class="active">
+        SECOND SECTION
+    </article>
+</section>
+
+	  
+	  
+<section id="main2" data-transition="slide">
+    <header data-title="Triqui Voice">
+<!--         <nav>
+            <a href="#article_1" data-router="article" class="left">
+                Home
+            </a>
+            <a href="#article_2" data-router="article" class="right">
+                Go
+            </a>
+        </nav> -->
+    </header>
+    <footer>
+        <nav>
+            <a href="#article_1" data-router="article" data-icon="home" class="active"></a>
+            <a href="#article_3" data-router="article" data-icon="settings"></a>
+			<!--<a href="#second" data-router="section" data-icon="right"></a> -->
+       </nav>
+    </footer>
+    <article id="article_1" class="active" data-transition="slide">
+	
+
+					Cuantos Jugadores?
+					</br>
+
+					<p>
+						<a href="#article_2" data-router="article"  class="small button" data-transition="slide">
+						1
+						</a>
+						<a href="#article_2" data-router="article"  class="small button" data-transition="slide">
+						2
+						</a>
+						
+					</p>
+
+        
+    </article>
+    <article id="article_2" data-transition="slide">
+        <div id="container" >
+			<div id="content">
+				<div id='inner'>
+					<table class="triquiTable">
+						<tr>
+							<td>a
+							</td>
+							<td>b
+							</td>
+							<td>c
+							</td>
+						</tr>
+						<tr>
+							<td>d
+							</td>
+							<td>e
+							</td>
+							<td>f
+							</td>
+						</tr>
+						<tr>
+							<td>g
+							</td>
+							<td>h
+							</td>
+							<td>i
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+    </article>
+	
+	<article id="article_3" data-transition="slide">
+	Configuraciones		
+	</article>
+</section>
+
+<div id="overlay" class="notification">
+  <div class="window show">
+    <strong>I'm an overlay</strong>
+    <button id="hide">Go away, overlay</button>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+Lungo.init({
+            name: 'example'
+        });
+
+Lungo.dom('#un_ejemplo').tap(function() {
+    Lungo.Notification.html('<p class="p_ntf"><br><br>Bienvenido<br><br></p><br>', "Cerrar");
+});
+</script>
+
+</body></html>
